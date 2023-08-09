@@ -1,26 +1,30 @@
-import React, { createContext, useState, useContext } from "react";
+/* eslint-disable react/prop-types */
+import React, { createContext, useState, useContext } from 'react'
 
-const AppContext = createContext();
+const AppContext = createContext()
 
 const AppProvider = ({ children }) => {
-  const [selectedPlaylistId, setSelectedPlaylistId] = useState(null);
+  const [selectedPlaylistId, setSelectedPlaylistId] = useState(null)
 
-  const [playlistRefreshFlag, setPlaylistRefreshFlag] = useState(false);
+  const [playlistRefreshFlag, setPlaylistRefreshFlag] = useState(false)
 
   // Callback function to trigger the playlist refresh
   const refreshPlaylist = () => {
-    setPlaylistRefreshFlag(!playlistRefreshFlag);
-  };
+    setPlaylistRefreshFlag(!playlistRefreshFlag)
+  }
 
   return (
-    <AppContext.Provider value={{ selectedPlaylistId, setSelectedPlaylistId,
+    <AppContext.Provider value={{
+      selectedPlaylistId,
+      setSelectedPlaylistId,
       playlistRefreshFlag,
-      refreshPlaylist }}>
+      refreshPlaylist
+    }}>
       {children}
     </AppContext.Provider>
-  );
-};
+  )
+}
 
-const useAppContext = () => useContext(AppContext);
+const useAppContext = () => useContext(AppContext)
 
-export { AppProvider, useAppContext };
+export { AppProvider, useAppContext }
