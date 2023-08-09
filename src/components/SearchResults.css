@@ -1,0 +1,40 @@
+
+p {
+  size: 20rem;
+  margin-top: 0;  
+  margin-bottom: 0.5em; 
+  color: beige;
+}
+
+h2 {
+  margin-top: 0; 
+  margin-bottom: 0.5em; 
+  color: #fbc990;
+  font-family: "Cormorant Garamond", serif;
+}
+
+img {
+  width: 6.5rem;
+  margin-bottom: 0;
+}
+
+.results {
+  display: inline-flex;
+  margin: 0.2em;
+  padding: 0.5em;
+  border: solid 0.2em #637164;
+  background-color: #637164;
+  border-radius: 0.2em;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+.info {
+  margin-left: 2em;
+  text-align: left;
+}
+
+details {
+  color: #3e5862;
+}

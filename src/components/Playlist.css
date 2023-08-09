@@ -1,0 +1,136 @@
+
+.playlist {
+  display: flex;
+  justify-content: center;
+  border: solid 0.2em #637164;
+  background-color: #637164;
+  border-radius: 0.2em;
+  margin: 2em;
+  flex-wrap: wrap;
+}
+
+.your-playlist {
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  margin-bottom: 0.2em;
+  font-size: 2em;
+  margin-top: 0.2em;
+}
+
+.new-playlist {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0.5em;
+  border: 3px solid #3e5862;
+  background-color: #3e5862;
+  border-radius: 0.2em;
+
+}
+
+h4 {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  color: #fbc990;
+}
+
+input.new-name {
+  border: solid 0.2em #3e5862;
+  height: 2em;
+  border-bottom: solid 3px #637164;
+  margin-left: 1em;
+  margin-right: 2em;
+  
+}
+
+input.new-name:focus {
+  border-color: #3e5862;
+  border-bottom: solid 3px #637164;
+}
+
+.create{
+  margin: 0.1em;
+  margin-right: 0.6em;
+  width: auto;
+  padding: 0.2em;
+  height: 60%;
+  display: flex;
+  align-items: center;
+}
+
+
+.user-playlists {
+  display: flex;
+  color: #fbc990;
+  font-family: "Cormorant Garamond", serif;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+} 
+
+
+.rename {
+  border: 3px solid black;
+}
+
+.no-bullets {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.no-bullets li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  font-size: 1.5em;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.playlists-name {
+  display: flex;
+  justify-content: space-around;
+}
+
+.selected-playlist {
+  border-left: solid 0.3em #3e5862;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.playlist-tr {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.playlist-tr li {
+  font-size: 1.5em;
+  font-family: "Cormorant Garamond", serif;
+  margin-left: 3em;
+}
+
+.playlist-tr p {
+  display: flex;
+  border: solid 0.1em #3e5862;
+  margin-top: 0.5em;
+  border-radius: 0.2em;
+  background-color: #3e5862;
+  width: auto;
+  justify-content: space-evenly;
+  
+}
+
+h3 {
+  font-size: 1.7em;
+  font-family: "Cormorant Garamond", serif;
+  margin-bottom: 2em;
+  text-align: center;
+  margin-top: 0;
+  margin-left: 2em;
+}
